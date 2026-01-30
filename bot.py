@@ -6,10 +6,11 @@ from dotenv import load_dotenv
 
 from flask import Flask
 from threading import Thread
+import os
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/", methods=["GET", "HEAD"])
 def home():
     return "Bot is alive!"
 
@@ -17,11 +18,9 @@ def run():
     port = int(os.environ.get("PORT", 8080))
     app.run(host="0.0.0.0", port=port)
 
-
 def keep_alive():
     t = Thread(target=run)
     t.start()
-
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
@@ -491,4 +490,5 @@ keep_alive()  # starts the web server in the background
 print("Starting bot...")
 
 bot.run(TOKEN)
+
 
