@@ -485,8 +485,10 @@ async def terms(ctx):
 
 import asyncio
 
+keep_alive()  # starts the web server in the background
 
 
 print("Starting bot...")
 
 bot.run(TOKEN)
+
