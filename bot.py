@@ -45,26 +45,39 @@ THUMBNAILS_CATEGORY_NAME = "[🎨] THUMBNAILS"  # Exact category name for thumbn
 # ========== FAQ CONFIGURATION (Easy to Edit) ==========
 FAQ_ITEMS = [
     {
-        "question": "❓ How do I purchase a template?",
-        "answer": "Use the !order command and click the Buy button to open a purchase ticket. Our team will assist you from there!"
+        "question": "📦 What do I receive after purchasing a template?",
+        "answer": "You will receive the full game template along with instructions. Instructions are provided via a document and/or a video explaining how to use the template."
+    },
+    {
+        "question": "📉 What does limited stock mean?",
+        "answer": "If a template is marked as Sold Out, it will never be restocked again. Once it’s gone, it’s permanently unavailable."
+    },
+    {
+        "question": "🎮 Can I use the template for multiple games?",
+        "answer": "Yes. You are allowed to create unlimited games using the template you purchase."
     },
     {
         "question": "💳 What payment methods do you accept?",
-        "answer": "We accept USD and Robux payments."
+        "answer": "We accept payments in USD and Robux."
     },
     {
-        "question": "📦 When will I receive my template?",
-        "answer": "Templates are delivered immediately after payment confirmation. Our team will provide all files and documentation in your ticket."
+        "question": "🧪 Is there a test product available?",
+        "answer": "Yes. A test product or demo is provided when the template goes on sale so you can review it before purchasing."
     },
     {
-        "question": "🔄 Do you offer refunds?",
-        "answer": "Due to the nature of digital products, we do not offer refunds. Please review product descriptions carefully before purchasing."
+        "question": "💰 Can I sell a game made using the template?",
+        "answer": "Yes, you may sell and monetize games created using the template. However, reselling, redistributing, or leaking the raw template is strictly prohibited."
     },
     {
-        "question": "👥 Can I share the template with my team?",
-        "answer": "All collaborators must be listed in your purchase ticket. Unauthorized sharing is strictly prohibited per our Terms of Service."
+        "question": "🔄 Are updates included?",
+        "answer": "Updates are not guaranteed. However, any bugs found in the original template will be fixed free of charge, provided the template has not been modified."
+    },
+    {
+        "question": "🔁 Do you offer refunds?",
+        "answer": "No refunds are offered. All sales are final, so please review the test product and details carefully before purchasing."
     },
 ]
+
 # ========================================================
 
 # ========== WELCOME CONFIGURATION ==========
@@ -490,5 +503,6 @@ keep_alive()  # starts the web server in the background
 print("Starting bot...")
 
 bot.run(TOKEN)
+
 
 
