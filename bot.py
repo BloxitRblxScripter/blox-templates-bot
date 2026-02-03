@@ -29,11 +29,11 @@ print(f"Token loaded: {TOKEN[:20] if TOKEN else 'None'}...")
 
 # ========== STORE CONFIGURATION (Easy to Edit) ==========
 STORE_PRODUCTS = [
-    {"emoji": "🔍", "name": "Find The Template", "price": "$25.00", "status": "Available"},
+    {"emoji": "❓", "name": "Guess The _____ Template", "price": "$15.00", "status": "Available"},
 ]
 
 PAYMENT_METHODS = "USD, Robux"
-STORE_DESCRIPTION = "Welcome to our premium template store! Click the button below to get started."
+STORE_DESCRIPTION = "Welcome to Blox Templates! Click the button below to get started."
 SUPPORT_MESSAGE = "Our support team is here to help you!"
 
 # Ticket Configuration
@@ -503,6 +503,7 @@ keep_alive()  # starts the web server in the background
 print("Starting bot...")
 
 bot.run(TOKEN)
+
 
 
 
