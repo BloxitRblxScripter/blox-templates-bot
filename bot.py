@@ -425,71 +425,72 @@ async def welcome_toggle(ctx):
 
 @bot.command(name='terms')
 async def terms(ctx):
-    embed = discord.Embed(
-        title="📜 Game Templates — Terms of Service",
-        description="**Effective Date: September 06, 2025**\n\nBy purchasing or using any product from Game Templates, you agree to the following legally binding Terms of Service. Please read carefully before making a purchase.",
-        color=0x5865F2
-    )
-    
-    embed.add_field(
-        name="🔒 Intellectual Property & Ownership",
-        value="All templates remain the exclusive property of Game Templates. Purchasing grants you a non-exclusive, non-transferable license. You may not claim ownership or authorship.",
-        inline=False
-    )
-    
-    embed.add_field(
-        name="🚫 Prohibited Redistribution",
-        value="Reselling, leaking, sharing, trading, or redistributing our products in any form (files, uploads, unauthorized access, etc.) is strictly forbidden.",
-        inline=False
-    )
-    
-    embed.add_field(
-        name="👥 Collaboration Restrictions",
-        value="Collaborators who access the product or work inside Roblox Studio must be owners of the game. All Discord usernames and Roblox usernames for collaborators must be listed in the purchase ticket. You are responsible for any unauthorized access or sharing.",
-        inline=False
-    )
-    
-    embed.add_field(
-        name="⚖️ Buyer Liability",
-        value="Review product descriptions and requirements before purchasing. Lack of technical knowledge does not qualify for refunds.",
-        inline=False
-    )
-    
-    embed.add_field(
-        name="✏️ Attribution & Credit",
-        value="If significant assets remain intact, you must acknowledge them as adjusted property of Game Templates. Claiming as entirely your own is prohibited.",
-        inline=False
-    )
-    
-    embed.add_field(
-        name="🔓 Access Revocation",
-        value="We reserve the right to revoke access to current and future products if you violate any part of this agreement.",
-        inline=False
-    )
-    
-    embed.add_field(
-        name="⚠️ Enforcement & DMCA",
-        value="We actively monitor for piracy. Unauthorized redistribution will result in DMCA takedowns, Roblox reports, and legal escalation if necessary.",
-        inline=False
-    )
-    
-    embed.add_field(
-        name="🎮 Game Takedown Liability",
-        value="If your game is removed or restricted by Roblox (including DMCA or other enforcement actions), Game Templates is not liable. All risk rests with the buyer.",
-        inline=False
-    )
-    
-    embed.add_field(
-        name="📝 Terms Amendments",
-        value="We may update these Terms of Service at any time. Continued use constitutes acceptance. Review periodically for changes.",
-        inline=False
-    )
-    
-    embed.add_field(
-        name="📜 Legal Agreement",
-        value="By purchasing, you enter a legally binding contract.",
-        inline=False
-    )
+  embed = discord.Embed(
+    title="📜 Blox Templates — Terms & Conditions",
+    description="By purchasing or using any product from **Blox Templates**, you agree to the following Terms & Conditions. Please read carefully before purchasing.",
+    color=0x5865F2
+)
+
+embed.add_field(
+    name="🔒 License & Ownership",
+    value="All templates remain the exclusive property of Blox Templates. Purchasing a product grants you a non-exclusive, non-transferable license to use the template. You do not own the template and may not claim it as your own or sell it in any form.",
+    inline=False
+)
+
+embed.add_field(
+    name="🚫 No Reselling or Redistribution",
+    value="Reselling, trading, leaking, sharing, uploading, or redistributing templates in any form is strictly prohibited. This includes public or private sharing, giving access to friends, collaborators, or developers, and selling the raw or lightly edited template. Violations result in immediate license revocation.",
+    inline=False
+)
+
+embed.add_field(
+    name="✅ Allowed Use",
+    value="Templates may be used for personal or commercial Roblox games. Monetization is allowed. Selling a percentage of a game or revenue sharing is only permitted if clear, noticeable, and meaningful changes have been made. Minor edits such as recolors, renaming, or small tweaks do not qualify.",
+    inline=False
+)
+
+embed.add_field(
+    name="👥 Collaboration Responsibility",
+    value="You are fully responsible for anyone who has access to your project. If a collaborator, friend, or developer leaks or redistributes the template, you will still be held liable.",
+    inline=False
+)
+
+embed.add_field(
+    name="💳 No Refunds",
+    value="All sales are final. No refunds, chargebacks, or exchanges will be accepted under any circumstances.",
+    inline=False
+)
+
+embed.add_field(
+    name="⚖️ Enforcement & License Revocation",
+    value="Blox Templates reserves the right to revoke access to current and future products, issue DMCA takedowns, and take further action if any part of these terms is violated.",
+    inline=False
+)
+
+embed.add_field(
+    name="📉 No Guarantees",
+    value="All products are provided as templates. We do not guarantee performance, earnings, popularity, or compatibility with future Roblox updates.",
+    inline=False
+)
+
+embed.add_field(
+    name="🏷️ Credit & Claiming",
+    value="If significant portions of the template remain unchanged, proper credit to Blox Templates is required. Claiming the template or its assets as entirely your own is prohibited.",
+    inline=False
+)
+
+embed.add_field(
+    name="🔄 Updates & Bug Fixes",
+    value="Bug fixes may be provided free of charge for issues present in the original template. Updates or fixes may be refused if scripts or systems have been altered.",
+    inline=False
+)
+
+embed.add_field(
+    name="📋 Final Agreement",
+    value="By purchasing or using any product from Blox Templates, you acknowledge and agree to all of the above Terms & Conditions.",
+    inline=False
+)
+
     
     embed.set_footer(text="By purchasing from Game Templates, you acknowledge and agree to all sections of this TOS")
     
@@ -503,6 +504,7 @@ keep_alive()  # starts the web server in the background
 print("Starting bot...")
 
 bot.run(TOKEN)
+
 
 
 
